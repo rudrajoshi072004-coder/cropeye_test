@@ -1398,7 +1398,7 @@ const OfficerDashboard: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="bg-[#f8f9fa] rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
             <div className="flex items-center justify-between mb-2">
-              <img src="/Image/crop images/location.png" alt="Field Area" className="w-14 h-14 object-contain rounded-lg" />
+              <img src="Image/crop images/location.png" alt="Field Area" className="w-14 h-14 object-contain rounded-lg" />
               <div className="text-right">
                 <div className="text-2xl font-bold" style={{ color: '#212121', fontFamily: 'Inter, Poppins, sans-serif' }}>
                   {loadingData ? (
@@ -1415,7 +1415,7 @@ const OfficerDashboard: React.FC = () => {
 
           <div className="bg-[#f8f9fa] rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
             <div className="flex items-center justify-between mb-2">
-              <img src="/Image/crop images/Crop Status.png" alt="Crop Status" className="w-14 h-14 object-contain rounded-lg" />
+              <img src="Image/crop images/Crop Status.png" alt="Crop Status" className="w-14 h-14 object-contain rounded-lg" />
               <div className="text-right">
                 <div className="text-lg font-bold" style={{ color: '#212121', fontFamily: 'Inter, Poppins, sans-serif' }}>
                   {loadingData ? (
@@ -1433,7 +1433,7 @@ const OfficerDashboard: React.FC = () => {
 
           <div className="bg-[#f8f9fa] rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
             <div className="flex items-center justify-between mb-2">
-              <img src="/Image/crop images/Time.png" alt="Time to Harvest" className="w-14 h-14 object-contain rounded-lg" />
+              <img src="Image/crop images/Time.png" alt="Time to Harvest" className="w-14 h-14 object-contain rounded-lg" />
               <div className="text-right">
                 <div className="text-2xl font-bold" style={{ color: '#212121', fontFamily: 'Inter, Poppins, sans-serif' }}>
                   {loadingData ? (
@@ -1454,7 +1454,7 @@ const OfficerDashboard: React.FC = () => {
 
           <div className="bg-[#f8f9fa] rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
             <div className="flex items-center justify-between mb-2">
-              <img src="/Image/crop images/yield.png" alt="Sugar Content" className="w-14 h-14 object-contain rounded-lg" />
+              <img src="Image/crop images/yield.png" alt="Sugar Content" className="w-14 h-14 object-contain rounded-lg" />
               <div className="text-right">
                 <div className="text-2xl font-bold" style={{ color: '#212121', fontFamily: 'Inter, Poppins, sans-serif' }}>
                   {loadingData ? (

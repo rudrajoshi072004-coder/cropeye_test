@@ -457,7 +457,7 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="text-emerald-800 font-bold hidden lg:inline-block bg-white/50 px-3 py-1 rounded-full border border-emerald-200">
               Grapes Dashboard
             </span>
-            <img src="/icons/Cropeye-new.png" alt="CropEye Logo" className="logo-image" />
+            <img src="icons/Cropeye-new.png" alt="CropEye Logo" className="logo-image" />
           </div>
         </div>
       </header>
