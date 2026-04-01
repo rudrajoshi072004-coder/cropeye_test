@@ -2,23 +2,13 @@ server {
   listen ${PORT};
   server_name _;
 
-  # Make root go to /login/
-  location = / {
-    return 302 /login/;
+  # Serve gateway at the root (/)
+  location / {
+    root /usr/share/nginx/html/login/;
+    try_files $uri $uri/ /index.html;
   }
 
-  # Normalize missing trailing slashes
-  location = /login {
-    return 301 /login/;
-  }
-  location = /grapes {
-    return 301 /grapes/;
-  }
-  location = /sugarcane {
-    return 301 /sugarcane/;
-  }
-
-  # --- Gateway SPA (served at /login/) ---
+  # --- Gateway SPA (also served at /login/ for consistency) ---
   location /login/ {
     alias /usr/share/nginx/html/login/;
     try_files $uri $uri/ /login/index.html;
