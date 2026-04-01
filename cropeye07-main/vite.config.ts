@@ -66,7 +66,7 @@ export default defineConfig(({ mode }) => ({
       'Expires': '0',
     },
     port: 3002,
-    strictPort: false,
+    strictPort: true, // Fail if port 3002 is busy
     // Proxy API requests to avoid CORS issues in development
     proxy: {
       '/api/dev-plot': {

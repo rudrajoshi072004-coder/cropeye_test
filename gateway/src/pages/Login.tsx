@@ -36,9 +36,8 @@ export default function LoginPage() {
     return u.toString();
   };
 
-  // Auto redirect (IMPORTANT)
+  // Handle manual logout via URL
   useEffect(() => {
-    // If coming from any app logout, clear gateway storage and stay on login
     try {
       const url = new URL(window.location.href);
       const shouldLogout = url.searchParams.get("logout") === "1";
@@ -46,27 +45,10 @@ export default function LoginPage() {
         logout();
         url.searchParams.delete("logout");
         window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
-        return;
       }
     } catch {
       // ignore
     }
-
-    const token = getToken();
-    if (!token) return;
-    const industry = getIndustry();
-    const dest = getRedirectURL(industry);
-    if (dest) {
-      const refresh = localStorage.getItem("refresh_token");
-      if (refresh && industry) {
-        window.location.assign(buildRedirectWithTokens(dest, token, refresh, industry));
-      } else {
-        // If missing pieces, force manual login
-        setError("");
-      }
-      return;
-    }
-    setError("Invalid industry received from server");
   }, []);
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -85,9 +67,9 @@ export default function LoginPage() {
       const refresh = result.refresh;
       const industryName = result.user?.industry?.name;
       const cropType =
-        result.user?.industry?.crop_type ||
+        result.crop_type ||
         result.user?.crop_type ||
-        result.crop_type;
+        result.user?.industry?.crop_type;
 
       if (!access || !refresh) {
         throw new Error("Invalid login response");

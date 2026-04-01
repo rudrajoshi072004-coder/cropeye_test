@@ -75,7 +75,7 @@ export default defineConfig(({ mode }) => ({
       credentials: false,
       maxAge: 86400, // 24 hours
     },
-    strictPort: false, // Allow port fallback if 5174 is busy
+    strictPort: true, // Fail if port 3001 is busy (so we know why redirection fails)
     hmr: {
       // Explicitly set HMR to use network host for WiFi access
       port: 3001,
