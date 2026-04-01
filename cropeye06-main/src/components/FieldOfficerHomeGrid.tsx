@@ -377,31 +377,31 @@ const FieldOfficerHomeGrid: React.FC<FieldOfficerHomeGridProps> = ({ onMenuClick
   const items = [
     {
       title: 'ViewFarmerPlot',
-      iconImg: '/Image/crop images/Fields.png',
+      iconImg: 'Image/crop images/Fields.png',
       bgColor: 'bg-green-300',
       hoverColor: 'hover:bg-green-300'
     },
     {
       title: 'User Desk',
-      iconImg: '/Image/crop images/Farmers.png',
+      iconImg: 'Image/crop images/Farmers.png',
       bgColor: 'bg-blue-300',
       hoverColor: 'hover:bg-blue-300'
     },
     {
       title: 'MyTask',
-      iconImg: '/Image/crop images/Tasks.png',
+      iconImg: 'Image/crop images/Tasks.png',
       bgColor: 'bg-purple-300',
       hoverColor: 'hover:bg-purple-300'
     },
     {
       title: "Resources Planning",
-      iconImg: '/Image/crop images/location.png',
+      iconImg: 'Image/crop images/location.png',
       bgColor: "bg-orange-300",
       hoverColor: "hover:bg-orange-300",
     },
     {
       title: 'Plan & Book',
-      iconImg: '/Image/crop images/Events.png',
+      iconImg: 'Image/crop images/Events.png',
       bgColor: 'bg-yellow-300',
       hoverColor: 'hover:bg-yellow-300'
     }
@@ -411,7 +411,7 @@ const FieldOfficerHomeGrid: React.FC<FieldOfficerHomeGridProps> = ({ onMenuClick
     {
       title: 'Total Farmers',
       value: stats.totalFarmers,
-      iconImg: '/Image/crop images/Farmers.png',
+      iconImg: 'Image/crop images/Farmers.png',
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200',
       textColor: 'text-blue-700',
@@ -419,7 +419,7 @@ const FieldOfficerHomeGrid: React.FC<FieldOfficerHomeGridProps> = ({ onMenuClick
     {
       title: 'Total Plots',
       value: stats.totalPlots,
-      iconImg: '/Image/crop images/Fields.png',
+      iconImg: 'Image/crop images/Fields.png',
       bgColor: 'bg-green-50',
       borderColor: 'border-green-200',
       textColor: 'text-green-700',

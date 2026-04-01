@@ -300,7 +300,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         }}
       >
         <img
-          src="/Image/farmer_illustration.png"
+          src="Image/farmer_illustration.png"
           alt="Farmer Background"
           className="absolute"
           style={{
@@ -322,7 +322,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           }}
           onError={(e) => {
             console.error('❌ Failed to load farmer_illustration.png:', e);
-            console.error('Image path attempted: /Image/farmer_illustration.png');
+            console.error('Image path attempted: Image/farmer_illustration.png');
           }}
         />
         {/* Top fade gradient overlay - blends image with sky-blue sidebar background */}
